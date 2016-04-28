@@ -1,0 +1,314 @@
+/* Header */
+#header {
+  background-size:cover;
+  position:relative;
+  height:100vh;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header .header-container {
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:36px;
+  -ms-transform: translate(0,-50%); 
+  -webkit-transform: translate(0,-50%); 
+  transform: translate(0,-50%);  
+}
+
+/* Menu */
+#menu {
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-toggle {
+    border-color: #0e688b;
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+      background-color: #f9bf3a;
+  }
+}
+
+#nav-bar {
+  width: 100%;
+  border: 0;
+  background-color: #f9bf3a;
+  border-radius: 0px;
+  margin-bottom: 0;
+  z-index: 999;
+
+  li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+
+/* Services and Technology */
+#services-technology {
+  background-color: #eaf5fb;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+
+  h2 {
+    color: #0e688b;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .services {
+    border-right: 3px solid #cae2ef;
+  }
+
+  .services-container, 
+  .technologies-container {
+      margin-top: 30px;
+  }
+
+  .service-icon img {
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.1);
+      width: 100%;
+  }
+
+  .service-icon p {
+    color: #0e688b;
+    font-weight: 700;
+    padding: 10px 0;
+  } 
+
+  .technology {
+    .flip {
+      -webkit-perspective: 800;
+      perspective: 800;
+      position: relative;
+      text-align: center;
+
+      .card.flipped {
+        -webkit-transform: rotatey(-180deg);
+        transform: rotatey(-180deg);
+      }
+
+      .card {
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: 0.5s;
+        transform-style: preserve-3d;
+        transition: 0.5s;
+
+        .face {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          z-index: 2;
+        }
+
+        .front,
+        .back {
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+        }
+
+        .back {
+          -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+        }
+      }
+
+      .inner {
+        margin: 0px !important;
+
+        .flipControl {
+          position: absolute;
+          top: 0;
+          right: 4px;
+          font-size: 1.2em;
+        }    
+      }
+      
+    }
+  }
+
+  .technologies-container {
+    p {
+      color: #6fc1ce;
+      font-weight: 700;
+    }
+    
+    .technologies-icons {
+      margin: 30px 0;
+    }
+  } 
+
+  .all-technologies-icons img {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .technologies-icons img {
+    width: 100%;
+  }
+}
+
+/* Portfolio */
+#portfolio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #59abe4;
+
+  h2 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .portfolio-container {
+    margin-top: 40px;
+  }
+
+  .portfolio-item img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/* News and Support */
+#news-support {
+  background-color: #eaf5fb; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h2 {
+    color: #0e688b;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .news, 
+  .support {
+    padding: 20px 0;
+  }
+
+  .news {
+    border-right: 3px solid #cae2ef;
+
+    .news-item {
+      h3 {
+        margin-top: 0;
+        color: #406275;
+      }
+
+      a {
+        float: right;
+        font-weight: 600;
+        margin-top: 15px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .carousel-indicators {
+      bottom: -40px;
+
+      li {
+        background-color: #59abe4;
+
+        &.active {
+          background-color: #0e688b;
+        }
+      }
+    }
+  }
+
+  .news-container, .support-container, .support-icons {
+    margin-top: 20px;
+  }
+
+  .support-icons img {
+    width: 100%;
+  }
+
+  .support p {
+    color: #6fc1ce;
+    font-weight: 700;
+  }
+}
+
+
+/* Contact us */
+#contact-us {
+  color: #fff;
+  background-color: #59abe4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h2, h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .form-control {
+    border-radius: 0;
+    margin: 10px;
+    border: 0;
+    background-color: #eaf5fb;
+    font-weight: 600;
+    color: #6fc1ce;
+  }
+
+  button {
+    width: 120px;
+    margin: 10px;
+    border-radius: 0;
+    border: 0;
+    color: #0e688b;
+    background-color: #f9bf3a;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+/* Footer */
+#footer {
+  color: #0e688b;
+  background-color: #f9bf3a;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 970px) {
+  #footer {
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #services-technology .services,
+  #news-support .news {
+    border-right: 0;
+  }
+
+  #contact-us .contact-more {
+    text-align: center;
+  }
+}

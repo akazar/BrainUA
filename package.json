@@ -1,0 +1,12 @@
+{
+  "name": "BrainUA",
+  "description": "BrainUA Site",
+  "engine": "node 0.4.1",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "gulp-less": "*",
+    "gulp-clean": "^0.3.2"
+  }
+}
